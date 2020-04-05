@@ -3,6 +3,8 @@ import './App.css';
 import CounterClass from './CounterClass';
 import CounterHooks from './CounterHooks';
 import Toggler from './Toggler';
+import SimpleFormClass from './SimpleFormClass';
+import SimpleFormHooks from './SimpleFormHooks';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <CounterClass/>
       <CounterHooks/>
       <Toggler/>
+      <SimpleFormClass/>
+      <SimpleFormHooks/> 
     </div>  
   );
 }
