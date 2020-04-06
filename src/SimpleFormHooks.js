@@ -1,22 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const SimpleFormHooks = () => {
 
     const [email, setEmail] = useState("");
-
     const handleChange = (e) => {
-        setEmail(e.target.value);
+        setEmail(e.target.value)
     }
-
-    return (
+    return(
         <div>
-            <form onChange={handleChange} onClick={() => setEmail("")}>
-                <h1>The Value is...{email}</h1>
-                <input type="text" value={email}/>
-                <button>Submit</button>
-            </form>
+            <h1>The value is...</h1>
+            <input type="text" value={email} onChange={handleChange}/>    
+            <button onClick={() => setEmail("")}>Submit</button>
         </div>
     )
 }
-
 export default SimpleFormHooks;
